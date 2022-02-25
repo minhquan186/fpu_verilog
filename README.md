@@ -8,6 +8,10 @@ IEEE 754 Floating Point Unit written in Verilog
 ```
 g++ -o test.exe test.cpp
 ```
+For more information about the program after compilation, type
+```
+.\test.exe --help
+```
 ### 2. Generate test case using:
 ```
 .\test.exe --gen
@@ -30,3 +34,22 @@ Input testbench file are saved as tb_input_gen.txt
 ```
 You should see file ```tb_input_gen.txt``` in your directory.
 ### 3. Simulation:
+- Open Modelsim
+- Change project directory to this code folder
+- Add all the verilog code to the project
+- In file ```fpu_tb.v``` on line 2, you should see:
+```
+parameter NUM_CASES = 10;
+```
+- Change the ```NUM_CASES``` according to the number of cases you gen before.
+- Compile the code and simualte.
+- Use ```run -all``` command in Verilog console or press **Run -All** button in the toolbar.
+- The code will automatically stop running after loop through all test cases.
+- You should see an output file named ```tb_output_gen.txt``` in your directory.
+### 4. Evaluation:
+Rerun the ```test.exe``` program with the following command:
+```shell
+.\test.exe --eval
+```
+- The terminal will display the nunber of errors if any along with the line that is differences from ground truth.
+- If all the test cases are passed you will see ```Test passed!``` on your terminal.
