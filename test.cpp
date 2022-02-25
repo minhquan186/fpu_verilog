@@ -128,7 +128,6 @@ void tb_gen(int cases_num)
         // std::cout << opcode << " " << bin_a << " " << bin_b << " " << bin_res << " " << error << std::endl;
         
         file1 << opcode << bin_a << bin_b << std::endl;
-        
         file2 << bin_res << error << std::endl;
 
     }
@@ -141,7 +140,7 @@ void res_compare()
 {
     std::ifstream truth("tb_output_gen.txt");
     std::ifstream fpu_gen("output_tb_fpu.txt");
-
+    
     if (!truth){
         fpu_gen.close();
         throw std::runtime_error("Failed to open tb_output_gen.txt");
