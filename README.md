@@ -16,7 +16,11 @@ For more information about the program after compilation, type
 ```
 .\test.exe --gen
 ```
+<<<<<<< HEAD
 - On your terminal you should see:
+=======
+On your terminal you should see:
+>>>>>>> 60274b60a827b03fcf6b5de4713855845d5f4d09
 ```
 Number of cases to generate:
 ```
