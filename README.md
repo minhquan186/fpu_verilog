@@ -16,10 +16,6 @@ For more information about the program after compilation, type
 ```
 .\test.exe --gen
 ```
-or
-```
-.\test.exe -g
-```
 On your terminal you should see:
 ```
 Number of cases to generate:
