@@ -17,8 +17,6 @@ For more information about the program after compilation, type
 .\test.exe --gen
 ```
 - On your terminal you should see:
-=======
-On your terminal you should see:
 ```
 Number of cases to generate:
 ```
